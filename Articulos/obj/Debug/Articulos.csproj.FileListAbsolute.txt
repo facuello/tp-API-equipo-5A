@@ -1,0 +1,9 @@
+C:\Users\Facuc\Documents\GitHub\TpWinform\Articulos\bin\Debug\Articulos.dll
+C:\Users\Facuc\Documents\GitHub\TpWinform\Articulos\bin\Debug\Articulos.pdb
+C:\Users\Facuc\Documents\GitHub\TpWinform\Articulos\bin\Debug\BaseDeDatos.dll
+C:\Users\Facuc\Documents\GitHub\TpWinform\Articulos\bin\Debug\BaseDeDatos.pdb
+C:\Users\Facuc\Documents\GitHub\TpWinform\Articulos\obj\Debug\Articulos.csproj.AssemblyReference.cache
+C:\Users\Facuc\Documents\GitHub\TpWinform\Articulos\obj\Debug\Articulos.csproj.CoreCompileInputs.cache
+C:\Users\Facuc\Documents\GitHub\TpWinform\Articulos\obj\Debug\Articulos.csproj.Up2Date
+C:\Users\Facuc\Documents\GitHub\TpWinform\Articulos\obj\Debug\Articulos.dll
+C:\Users\Facuc\Documents\GitHub\TpWinform\Articulos\obj\Debug\Articulos.pdb

@@ -1,0 +1,6 @@
+C:\Users\Facuc\Documents\GitHub\TpWinform\Categorias\bin\Debug\Categorias.dll
+C:\Users\Facuc\Documents\GitHub\TpWinform\Categorias\bin\Debug\Categorias.pdb
+C:\Users\Facuc\Documents\GitHub\TpWinform\Categorias\obj\Debug\Categorias.csproj.AssemblyReference.cache
+C:\Users\Facuc\Documents\GitHub\TpWinform\Categorias\obj\Debug\Categorias.csproj.CoreCompileInputs.cache
+C:\Users\Facuc\Documents\GitHub\TpWinform\Categorias\obj\Debug\Categorias.dll
+C:\Users\Facuc\Documents\GitHub\TpWinform\Categorias\obj\Debug\Categorias.pdb
