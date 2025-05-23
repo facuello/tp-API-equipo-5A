@@ -8,6 +8,7 @@ using Articulos;
 using BaseDeDatos;
 using api_productos.Models
 
+
 namespace api_productos.Controllers
 {
     public class ArticuloController : ApiController
@@ -43,6 +44,8 @@ namespace api_productos.Controllers
             nuevo.Precio = art.Precio;
 
             catalogo.agregarArticulo(nuevo);
+        public void Post([FromBody]Articulo value)
+        {
         }
 
         // PUT: api/Articulo/5
