@@ -7,3 +7,12 @@ C:\Users\Facuc\Documents\GitHub\TpWinform\Articulos\obj\Debug\Articulos.csproj.C
 C:\Users\Facuc\Documents\GitHub\TpWinform\Articulos\obj\Debug\Articulos.csproj.Up2Date
 C:\Users\Facuc\Documents\GitHub\TpWinform\Articulos\obj\Debug\Articulos.dll
 C:\Users\Facuc\Documents\GitHub\TpWinform\Articulos\obj\Debug\Articulos.pdb
+C:\Users\User\Desktop\tp-API-equipo-5A\Articulos\bin\Debug\Articulos.dll
+C:\Users\User\Desktop\tp-API-equipo-5A\Articulos\bin\Debug\Articulos.pdb
+C:\Users\User\Desktop\tp-API-equipo-5A\Articulos\bin\Debug\BaseDeDatos.dll
+C:\Users\User\Desktop\tp-API-equipo-5A\Articulos\bin\Debug\BaseDeDatos.pdb
+C:\Users\User\Desktop\tp-API-equipo-5A\Articulos\obj\Debug\Articulos.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\tp-API-equipo-5A\Articulos\obj\Debug\Articulos.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\tp-API-equipo-5A\Articulos\obj\Debug\Articulos.csproj.Up2Date
+C:\Users\User\Desktop\tp-API-equipo-5A\Articulos\obj\Debug\Articulos.dll
+C:\Users\User\Desktop\tp-API-equipo-5A\Articulos\obj\Debug\Articulos.pdb
