@@ -23,13 +23,13 @@ namespace api_productos.Controllers
         }
 
         // GET: api/Articulo/5
-        //public Articulo Get(int id)
-        //{
-        //    Catalogo catalogo = new Catalogo();
-        //    //List<Articulo> lista = catalogo.listar();
+        public Articulo Get(int id)
+        {
+            CatalogoArticulo articulo = new CatalogoArticulo();
+            List<Articulo> lista = articulo.listar();
 
-        //    //return lista.Find(x=> x.Id == id);
-        //}
+            return lista.Find(x => x.ID == id);
+        }
 
         // POST: api/Articulo
         public void Post([FromBody] ArticuloDto art)
@@ -56,8 +56,21 @@ namespace api_productos.Controllers
         //}
 
         // DELETE: api/Articulo/5
-        public void Delete(int id)
+        public HttpResponseMessage Delete(int id)
         {
+            try
+            {
+                CatalogoArticulo catalogo = new CatalogoArticulo();
+                catalogo.EliminarArticulo(id);
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, "Articulo borrado con exito.");
+
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, "No se pudo borrar el Articulo.");
+                throw ex;
+            }
+
         }
     }
 }
