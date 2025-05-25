@@ -1,4 +1,4 @@
-﻿using api_productos.Models;
+using api_productos.Models;
 using Articulos;
 using BaseDeDatos;
 using Categorias;
@@ -35,21 +35,22 @@ namespace api_productos.Controllers
         // POST: api/Articulo
 
         [HttpPost]
+
         public IHttpActionResult Post([FromBody] ArticuloDto art)
         {
             try
             {
                 if (string.IsNullOrWhiteSpace(art.Codigo))
                 {
-                    return BadRequest("El código del artículo no puede estar vacío.");
+                    return BadRequest("El codigo del articulo no puede estar vacio.");
                 }
                 else if (string.IsNullOrWhiteSpace(art.Nombre))
                 {
-                    return BadRequest("El nombre del artículo no puede estar vacío.");
+                    return BadRequest("El nombre del articulo no puede estar vacio.");
                 }
                 else if (art.Precio <= 0)
                 {
-                    return BadRequest("El precio del artículo no puede estar vacío.");
+                    return BadRequest("El precio del articulo no puede estar vacio.");
                 }
                 else if (art.IdMarca <= 0)
                 {
@@ -89,6 +90,8 @@ namespace api_productos.Controllers
 
         // PUT: api/Articulo/5
         public void Put(int id, [FromBody] ArticuloDto art)
+
+        public void Post([FromBody] ArticuloDto art)
         {
             CatalogoArticulo catalogo = new CatalogoArticulo();
             Articulo nuevo = new Articulo();
@@ -103,7 +106,22 @@ namespace api_productos.Controllers
 
             catalogo.modificar(nuevo);
         }
+        // PUT: api/Articulo/5
+        public void Put(int id, [FromBody] ArticuloDto art)
+        {
+            CatalogoArticulo catalogo = new CatalogoArticulo();
+            Articulo nuevo = new Articulo();
+            nuevo.ID = id;
+            nuevo.Codigo = art.Codigo;
+            nuevo.Nombre = art.Nombre;
+            nuevo.Descripcion = art.Descripcion;
+            nuevo.Marc = new Marca { Id = art.IdMarca };
+            nuevo.Categ = new Categoria { Id = art.IdCategoria };
+            nuevo.Imagen = art.Imagen;
+            nuevo.Precio = art.Precio;
 
+            catalogo.modificar(nuevo);
+        }
         //Agregar Imagenes: api/articulo/PostImg
 
         [HttpPost]

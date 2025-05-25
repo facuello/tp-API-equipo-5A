@@ -658,6 +658,7 @@ C:\Users\Facundo\Documents\GitHub\tp-API-equipo-5A\BaseDeDatos\obj\Debug\BaseDeD
 C:\Users\Facundo\Documents\GitHub\tp-API-equipo-5A\BaseDeDatos\obj\Debug\BaseDeDatos.pdb
 C:\Users\Facundo\Documents\GitHub\tp-API-equipo-5A\BaseDeDatos\bin\Debug\Microsoft.DiaSymReader.Native.x86.dll
 C:\Users\Facundo\Documents\GitHub\tp-API-equipo-5A\BaseDeDatos\bin\Debug\Microsoft.DiaSymReader.Native.amd64.dll
+<<<<<<< HEAD
 C:\Users\juanm\Desktop\tp-API-equipo-5A-main (2)\tp-API-equipo-5A-main\BaseDeDatos\bin\Debug\BaseDeDatos.dll.config
 C:\Users\juanm\Desktop\tp-API-equipo-5A-main (2)\tp-API-equipo-5A-main\BaseDeDatos\bin\Debug\BaseDeDatos.dll
 C:\Users\juanm\Desktop\tp-API-equipo-5A-main (2)\tp-API-equipo-5A-main\BaseDeDatos\bin\Debug\BaseDeDatos.pdb
@@ -822,3 +823,5 @@ C:\Users\juanm\Desktop\tp-API-equipo-5A-main (2)\tp-API-equipo-5A-main\BaseDeDat
 C:\Users\juanm\Desktop\tp-API-equipo-5A-main (2)\tp-API-equipo-5A-main\BaseDeDatos\obj\Debug\BaseDeDatos.pdb
 C:\Users\juanm\Desktop\tp-API-equipo-5A-main (2)\tp-API-equipo-5A-main\BaseDeDatos\bin\Debug\Microsoft.DiaSymReader.Native.x86.dll
 C:\Users\juanm\Desktop\tp-API-equipo-5A-main (2)\tp-API-equipo-5A-main\BaseDeDatos\bin\Debug\Microsoft.DiaSymReader.Native.amd64.dll
+=======
+>>>>>>> f65bc2e06ab77f1556e05eb2cff7799c32cc8bfc
