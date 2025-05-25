@@ -114,20 +114,20 @@ namespace Articulos
             {
                 datos.Conectar();
                 datos.Consultar("update ARTICULOS set Codigo = @Codigo, Nombre = @Nombre, Descripcion = @Descripcion, IdMarca = @IdMarca, IdCategoria = @IdCategoria, Precio = @Precio where Id = @ID");
-                datos.setearParametro("@Codigo",art.Codigo);
-                datos.setearParametro("@Nombre", art.Nombre);
-                datos.setearParametro("@Descripcion", art.Descripcion);
-                datos.setearParametro("@IdMarca", art.Marc.Id);
-                datos.setearParametro("@IdCategoria", art.Categ.Id);
-                datos.setearParametro("@Precio", art.Precio);
-                datos.setearParametro("@ID",art.ID);
+                datos.setearParametro("@Codigo",datos.validarNullString(art.Codigo));
+                datos.setearParametro("@Nombre", datos.validarNullString(art.Nombre));
+                datos.setearParametro("@Descripcion", datos.validarNullString(art.Descripcion));
+                datos.setearParametro("@IdMarca",datos.validarNullInt(art.Marc.Id));
+                datos.setearParametro("@IdCategoria", datos.validarNullInt(art.Categ.Id));
+                datos.setearParametro("@Precio", datos.validarNullDecimal(art.Precio));
+                datos.setearParametro("@ID", datos.validarNullInt(art.ID));
                 datos.EjecutarNonQuery();
                 datos.Cerrar();
 
                 datos.Conectar();
                 datos.Consultar("update IMAGENES set ImagenUrl = @ImagenUrl where IdArticulo = @IdArticulo");
-                datos.setearParametro("@IdArticulo",art.ID);
-                datos.setearParametro("@ImagenUrl",art.Imagen);
+                datos.setearParametro("@IdArticulo",datos.validarNullInt(art.ID));
+                datos.setearParametro("@ImagenUrl",datos.validarNullString(art.Imagen));
                 datos.EjecutarNonQuery();
                 datos.Cerrar();
             }

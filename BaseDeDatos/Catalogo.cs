@@ -72,7 +72,7 @@ namespace BaseDeDatos
         /// Validaciones NULL
         public string validarNullString(object Rdr)
         {
-            if (Rdr is DBNull)
+            if (Rdr is DBNull || Rdr is null)
             {
                 return string.Empty;
             }
@@ -80,7 +80,7 @@ namespace BaseDeDatos
         }
         public System.Decimal validarNullDecimal(object Rdr)
         {
-            if (Rdr is DBNull)
+            if (Rdr is DBNull || Rdr is null)
             {
                 return decimal.Zero;
             }
@@ -88,7 +88,7 @@ namespace BaseDeDatos
         }
         public int validarNullInt(object Rdr)
         {
-            if (Rdr is DBNull)
+            if (Rdr is DBNull || Rdr is null)
             {
                 return 0;
             }
