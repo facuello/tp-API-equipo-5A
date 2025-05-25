@@ -1,13 +1,14 @@
-﻿using System;
+﻿using api_productos.Models;
+using Articulos;
+using BaseDeDatos;
+using Categorias;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
-using Articulos;
-using BaseDeDatos;
-using api_productos.Models;
-using Categorias;
+using System.Web.UI.WebControls.WebParts;
 
 namespace api_productos.Controllers
 {
@@ -51,9 +52,32 @@ namespace api_productos.Controllers
         //}
 
         // PUT: api/Articulo/5
-        //public void Put(int id, [FromBody] Articulo value)
-        //{
-        //}
+        public void Put(int id, [FromBody] ArticuloDto art)
+        {
+            CatalogoArticulo catalogo = new CatalogoArticulo();
+            Articulo nuevo = new Articulo();
+            nuevo.ID = id;
+            nuevo.Codigo = art.Codigo;
+            nuevo.Nombre = art.Nombre;
+            nuevo.Descripcion = art.Descripcion;
+            nuevo.Marc = new Marca { Id = art.IdMarca };
+            nuevo.Categ = new Categoria { Id = art.IdCategoria };
+            nuevo.Imagen = art.Imagen;
+            nuevo.Precio = art.Precio;
+
+            catalogo.modificar(nuevo);
+        }
+
+        //Agregar Imagenes: api/Articulo?IdArticulo=1
+        public void Post(int IdArticulo,[FromBody] ImagenDto img)
+        {
+            CatalogoImagen catalogo = new CatalogoImagen();
+            Imagen nuevo = new Imagen();
+            nuevo.IdArticulo = IdArticulo;
+            nuevo.ImagenUrl = img.ImagenUrl;
+
+            catalogo.AgregarImagen(nuevo);
+        }
 
         // DELETE: api/Articulo/5
         public HttpResponseMessage Delete(int id)
