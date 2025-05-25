@@ -398,7 +398,6 @@ C:\Users\Facundo\Documents\GitHub\tp-API-equipo-5A\TpWinform\obj\Debug\TpWinform
 C:\Users\Facundo\Documents\GitHub\tp-API-equipo-5A\TpWinform\obj\Debug\TpWinform.csproj.Up2Date
 C:\Users\Facundo\Documents\GitHub\tp-API-equipo-5A\TpWinform\obj\Debug\TpWinform.exe
 C:\Users\Facundo\Documents\GitHub\tp-API-equipo-5A\TpWinform\obj\Debug\TpWinform.pdb
-<<<<<<< HEAD
 C:\Users\juanm\Desktop\tp-API-equipo-5A-main (2)\tp-API-equipo-5A-main\TpWinform\bin\Debug\TpWinform.exe.config
 C:\Users\juanm\Desktop\tp-API-equipo-5A-main (2)\tp-API-equipo-5A-main\TpWinform\bin\Debug\TpWinform.exe
 C:\Users\juanm\Desktop\tp-API-equipo-5A-main (2)\tp-API-equipo-5A-main\TpWinform\bin\Debug\TpWinform.pdb
@@ -572,5 +571,3 @@ C:\Users\juanm\Desktop\tp-API-equipo-5A-main (2)\tp-API-equipo-5A-main\TpWinform
 C:\Users\juanm\Desktop\tp-API-equipo-5A-main (2)\tp-API-equipo-5A-main\TpWinform\obj\Debug\TpWinform.csproj.Up2Date
 C:\Users\juanm\Desktop\tp-API-equipo-5A-main (2)\tp-API-equipo-5A-main\TpWinform\obj\Debug\TpWinform.exe
 C:\Users\juanm\Desktop\tp-API-equipo-5A-main (2)\tp-API-equipo-5A-main\TpWinform\obj\Debug\TpWinform.pdb
-=======
->>>>>>> f65bc2e06ab77f1556e05eb2cff7799c32cc8bfc
