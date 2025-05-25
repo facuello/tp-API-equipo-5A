@@ -8,6 +8,7 @@ namespace api_productos.Models
 {
     public class ImagenDto
     {
-        public string ImagenUrl { get; set; }
+        public System.Int32 IdArticulo { get; set; }
+        public List<string> ImagenUrl { get; set; }
     }
 }

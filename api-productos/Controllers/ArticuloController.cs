@@ -33,6 +33,8 @@ namespace api_productos.Controllers
         }
 
         // POST: api/Articulo
+
+        [HttpPost]
         public void Post([FromBody] ArticuloDto art)
         {
             CatalogoArticulo catalogo = new CatalogoArticulo();
@@ -68,15 +70,20 @@ namespace api_productos.Controllers
             catalogo.modificar(nuevo);
         }
 
-        //Agregar Imagenes: api/Articulo?IdArticulo=1
-        public void Post(int IdArticulo,[FromBody] ImagenDto img)
+        //Agregar Imagenes: api/articulo/PostImg
+
+        [HttpPost]
+        [Route("api/articulo/PostImg")]
+        public void PostImg([FromBody] ImagenDto img)
         {
             CatalogoImagen catalogo = new CatalogoImagen();
             Imagen nuevo = new Imagen();
-            nuevo.IdArticulo = IdArticulo;
-            nuevo.ImagenUrl = img.ImagenUrl;
-
-            catalogo.AgregarImagen(nuevo);
+            foreach (string aux in img.ImagenUrl)
+            {
+                nuevo.IdArticulo = img.IdArticulo;
+                nuevo.ImagenUrl = aux;
+                catalogo.AgregarImagen(nuevo);
+            }
         }
 
         // DELETE: api/Articulo/5
